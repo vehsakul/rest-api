@@ -48,6 +48,13 @@ Example:
        */
       params: Object,
 
+      /**
+       *  Headers to add to each request.
+       */
+      headers: {
+        type: Object,
+        value: function(){ return {} }
+      },
 
       /**
        * Allow the use of query parameters on other requests than GET requests.

@@ -31,6 +31,7 @@ Example:
 <dom-module id="rest-api-resource">
   <template>
     <iron-ajax id="ajax"
+              headers="{{headers}}"
               content-type="application/json"
               on-error="_transmitAjaxEvent"
               on-request="_transmitAjaxEvent"
@@ -211,7 +212,8 @@ Example:
         'limitParamName',
         'readOnly',
         'bubbles',
-        'allowNonGetParams'
+        'allowNonGetParams',
+        'headers'
       ];
 
       for (var i = 0, prop; prop = inheritedProperties[i]; i++) {
