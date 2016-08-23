@@ -79,6 +79,11 @@ Example:
       },
 
       /**
+       * Headers to add to each request.
+       */
+      headers: Object,
+
+      /**
        * Default set of request parameters used in all API requests.
        *
        * Inherited from the `params` parameter of the parent `rest-api` element.
@@ -236,7 +241,7 @@ Example:
 
     observers: [
       '_collectionChanged(collection.*)',
-      '_autoFetch(url, collection, params.*)'
+      '_autoFetch(url, collection, params.*, headers.*)'
     ],
 
     _isNested: function() {
