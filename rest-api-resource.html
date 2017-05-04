@@ -145,7 +145,10 @@ Example:
       /**
        * This flag turns off the feature that auto fetches data when the request is changed.
        */
-      noAutoFetch: Boolean,
+      noAutoFetch: {
+        type: Boolean,
+        value: false
+      },
 
       /**
        * Disable send any data changes to the API.
