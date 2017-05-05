@@ -508,6 +508,8 @@ Example:
           return;
         }
 
+        ajax.method = 'GET'
+
         var request = ajax.generateRequest();
         request.completes.then(function(request) {
           this._replaceCollection(request.response);
